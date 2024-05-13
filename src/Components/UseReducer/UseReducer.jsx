@@ -5,7 +5,7 @@ const UseReducer = () => {
     const [state,dispatch]=useReducer(ReducerAction,0)
     return (
         <div className='container text-center  '>
-            <h1>Using Reducer</h1>
+            <h1>Counter</h1>
            <div className='mt-5'>
            <button className='btn btn-success me-4' onClick={()=>{dispatch({type:'AddByTen',payload:10})}}>Click to add by 10</button>
             <button className='btn btn-danger ms-2' onClick={()=>{dispatch({type:'SubByTen',payload:10})}}>Click to minus by 10</button>

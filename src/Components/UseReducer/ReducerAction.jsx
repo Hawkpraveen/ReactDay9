@@ -8,7 +8,7 @@ export default function ReducerAction(state,action){
             return state + action.payload
         }
         case 'SubByTen':{
-            if(state>0){
+            if(state>0 && action.type!=='SubByTen' ){
                 return state -action.payload
             }
             else{

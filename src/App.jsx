@@ -7,7 +7,7 @@ import UseReducer from './Components/UseReducer/UseReducer';
 const App = () => {
   return (
     <div>
-      <h1>Day 9</h1>
+      
       {/* <CompA />
       <UseRef /> */}
       <UseReducer />
