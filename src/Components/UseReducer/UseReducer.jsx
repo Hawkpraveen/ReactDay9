@@ -13,11 +13,13 @@ const UseReducer = () => {
             <button className='btn btn-success me-4' onClick={()=>{dispatch({type:'Add'})}}>Click to add by 1</button>
             <button className='btn btn-danger ms-2' onClick={()=>{dispatch({type:'Sub'})}}>Click to minus by 1</button>
             <br />
+            <button className='btn btn-info ms-2 mt-3' onClick={()=>{dispatch({type:'reset'})}}>Reset</button>
            </div>
            
             <div className='container text-center mt-5 res'>
             {state}
             </div>
+            
            
             
         </div>

@@ -8,17 +8,28 @@ export default function ReducerAction(state,action){
             return state + action.payload
         }
         case 'SubByTen':{
-            
-                return state -action.payload 
+            if(state>0){
+                return state -action.payload
             }
-        
+            else{
+                return state 
+            }
+        }
             case 'Add':{
                 return state + 1
             }
             case 'Sub':{
-                
+                if(state>0){
                     return state -1
+                }
+                else{
+                    return state 
+                }
+            
         }    
+        case 'reset':{
+            return 0
+        }
         default:{
             return state
         }
