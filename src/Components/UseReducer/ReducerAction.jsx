@@ -8,8 +8,17 @@ export default function ReducerAction(state,action){
             return state + action.payload
         }
         case 'SubByTen':{
-            if(state>0 && action.type!=='SubByTen' ){
-                return state -action.payload
+            if(state>0  ){
+                if(action.type!=='SubByTen'  ){
+                    return 0 
+                }
+                 if(action.type==='SubByTen'  && state>=10){
+                    //alert("Click Minus Button")
+                    return state - action.payload
+                }
+                else{
+                    return state
+                }
             }
             else{
                 return state 
